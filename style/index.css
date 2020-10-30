@@ -103,6 +103,7 @@ nav a{
     text-decoration: none;
     padding: .5% 0%;
     transition: .5s;
+    border: 2px solid white;
 }
 
 nav a:hover{
@@ -206,6 +207,7 @@ footer{
     color: #706c61;
     background-color: #e1f4f3;
     transition: .5s;
+    border: 2px solid white;
 }
 
 .contact-footer button:hover{
@@ -222,4 +224,9 @@ footer{
 .social a{
     text-decoration: none;
     color:#e1f4f3;
+    animation: .5s;
+}
+
+.social a:hover{
+    color:black;
 }
