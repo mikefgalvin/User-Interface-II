@@ -50,7 +50,7 @@ table {
     box-sizing:border-box;
     padding:0;
     margin:0;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     max-width: 100%;
 }
 
@@ -161,6 +161,7 @@ nav a:hover{
     color: white;
 }
 
+/* Projects */
 
 .project-section{
     display: flex;
@@ -177,11 +178,14 @@ nav a:hover{
     width: 22%;
 }
 
-
-.project-title{
+ .project-title{ 
     display:flex;
     justify-content: space-around;
     padding: 1% 0;
+}
+
+.project-section h3{
+    padding: 4% 0 8% 0;
 }
 
 /*Footer*/
@@ -233,13 +237,13 @@ footer{
 
 /* MOBILE STYLES START*************** */
 
-/* anything less than 800px */
+/* anything less than 800px ****************/
 @media(max-width:800px){
     * { 
         box-sizing:border-box;
         padding:0;
         margin:0;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         max-width: 100%;
     }
     
@@ -277,7 +281,7 @@ footer{
     /*Header*/
     
     .header-nav{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         flex-direction: column;
         align-items: center;
     }
@@ -286,6 +290,7 @@ footer{
     .hero{
         flex-direction: column;
         align-items: center;
+        margin-top: 2%;
     }
     
     .hero-image{
@@ -299,13 +304,17 @@ footer{
         align-items: center;
         text-align: center;
     }
+    .hero-info h2{
+        font-size: 3.8rem;
+    }
     .hero-info h3{
-        font-size: 1.5rem;
+        font-size: 2.7rem;
+        padding-top: 2%;
     }
     
     .hero-button{
-        font-size: 2rem;
-        width: 18rem;
+        font-size: 3rem;
+        width: 25rem;
     }
     
     .project-section{
@@ -314,6 +323,7 @@ footer{
         flex-wrap: wrap;
         padding-top: 3%;
         padding-bottom: 3%;
+        margin-top: 4%;
     }
     
     .project-section div{
@@ -322,6 +332,11 @@ footer{
         align-items: center;
         width: 40%;
         margin-bottom: 6%;
+    }
+
+    .project-section h3{
+        font-size: 2.8rem;
+        padding-bottom: 0%;
     }
 
     .project-section .extra{
@@ -336,11 +351,11 @@ footer{
     }
 
     footer h2{
-        font-size: 2.8rem;
+        font-size: 3.2rem;
     }
     
     .contact-footer button{
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 2%;
     }
     
@@ -352,3 +367,73 @@ footer{
 
 }
 /* 800px breakpoint ends */
+/* 500px breakpoint Begins **************/
+
+@media(max-width:500px){
+   
+    
+    
+    
+   
+    
+    /*Header*/
+    
+
+    /*First Section*/
+   
+    .hero{
+        width: 100%;
+    }
+    
+    .hero-image{
+        width: 95%;
+    }
+    
+    .hero-info{
+        padding: 2% 1% 0% 1%;
+        width:100%;
+    }
+    .hero-info h3{
+        font-size: 1.5rem;
+    }
+    
+    .hero-button{
+        font-size: 2rem;
+        width: 18rem;
+    }
+    
+    
+    .project-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin-bottom: 6%;
+    }
+
+    .project-section h3{
+        font-size: 2rem;
+    }
+
+    .project-section .extra{
+        display: none;
+    }
+    
+    
+    /*Footer*/
+    
+  
+
+    footer h2{
+        font-size: 2.8rem;
+    }
+    
+    .contact-footer button{
+        font-size: 2rem;
+        margin: 2%;
+    }
+    
+ 
+
+}
+/* 500px breakpoint ends */
