@@ -1,1 +1,439 @@
 /* Add CSS styling here */
+/* Eric Myers CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* No Reset Below This Line */
+
+/* General Styling!*/
+
+* { 
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    /* border: 1px solid gray; */
+    max-width: 100%;
+}
+
+html{
+    font-size:62.5%;
+    padding: 0% 1% 0% 1%;
+}
+
+body{
+    color:#4f4f4f;
+    font-size:2.0rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height:1.5;
+}
+
+h1{
+    color: #e1f4f3;
+    font-size: 8rem;
+    padding-left: 2%;
+}
+
+h2{
+    color: #706c61;
+    font-size: 5rem;
+}
+
+h3{
+    color:#706c61;
+    font-size: 2rem;
+}
+
+header{
+    background-color: #706c61
+}
+
+/*Header*/
+
+.header-nav{
+    font-size: 3rem;
+    padding:1%;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+}
+
+nav a{
+    background-color:#e1f4f3;
+    color: #706c61;
+    width:20rem;
+    text-align: center;
+    text-decoration: none;
+    padding: .5% 0%;
+    transition: .5s;
+    border: 2px solid white;
+}
+
+nav a:hover{
+    background-color:black;
+    color: white;
+}
+/*First Section*/
+.hero{
+    display:flex;
+    padding-top: 1%;
+}
+
+.hero-image{
+    width: 45%;
+    padding-left: 0%;
+    object-fit:cover;
+}
+
+.hero-info{
+    padding: 8% 4% 0% 4%;
+    width:55%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-button{
+    font-size: 3rem;
+    background-color: #e1f4f3;
+    width: 25rem;
+    transition: .5s;
+    border:1px solid #706c61;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1%;
+    margin: 2% 0;
+}
+
+.hero-button:hover{
+    background-color:black;
+    color: white;
+}
+
+
+.hero-button a{
+    text-decoration: none;
+    color: #706c61;
+    text-align: center;
+    
+}
+
+.hero-button a:hover{
+    color: white;
+}
+
+/* Projects */
+
+.project-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.project-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+ .project-title{ 
+    display:flex;
+    justify-content: space-around;
+    padding: 1% 0;
+}
+
+.project-section h3{
+    padding: 4% 0 8% 0;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #706c61;
+    padding: 1%;
+}
+
+.contact-footer{
+    text-align: center;
+}
+
+.contact-footer h2{
+    color: #e1f4f3;
+}
+
+.contact-footer button{
+    font-size: 4rem;
+    margin: 2%;
+    padding: 1%;
+    color: #706c61;
+    background-color: #e1f4f3;
+    transition: .5s;
+    border: 2px solid white;
+}
+
+.contact-footer button:hover{
+    background-color: black;
+    color: white;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.social a{
+    text-decoration: none;
+    color:#e1f4f3;
+    animation: .5s;
+}
+
+.social a:hover{
+    color:black;
+}
+
+
+/* MOBILE STYLES START*************** */
+
+/* anything less than 800px ****************/
+@media(max-width:800px){
+    * { 
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+        /* border: 1px solid gray; */
+        max-width: 100%;
+    }
+    
+    html{
+        font-size:62.5%;
+        padding: 0% 1% 0% 1%;
+    }
+    
+    body{
+        color:#4f4f4f;
+        font-size:2.0rem;
+        font-family: 'Roboto Mono', monospace;
+        line-height:1.5;
+    }
+    
+    h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    h2{
+        color: #706c61;
+        font-size: 3rem;
+    }
+    
+    h3{
+        color:#706c61;
+        font-size: 2rem;
+    }
+    
+    header{
+        background-color: #706c61
+    }
+    
+    /*Header*/
+    
+    .header-nav{
+        font-size: 2.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*First Section*/
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+    }
+    
+    .hero-image{
+        width: 90%;
+        object-fit:cover;
+    }
+    
+    .hero-info{
+        padding: 2% 4% 0% 4%;
+        width:90%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-info h2{
+        font-size: 3.8rem;
+    }
+    .hero-info h3{
+        font-size: 2.7rem;
+        padding-top: 2%;
+    }
+    
+    .hero-button{
+        font-size: 3rem;
+        width: 25rem;
+    }
+    
+    .project-section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-top: 4%;
+    }
+    
+    .project-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin-bottom: 6%;
+    }
+
+    .project-section h3{
+        font-size: 2.8rem;
+        padding-bottom: 0%;
+    }
+
+    .project-section .extra{
+        display: none;
+    }
+    
+    
+    /*Footer*/
+    
+    footer{
+        padding-bottom: 2%;
+    }
+
+    footer h2{
+        font-size: 3.2rem;
+    }
+    
+    .contact-footer button{
+        font-size: 3rem;
+        margin: 2%;
+    }
+    
+    
+    .social{
+        display: none;
+    }
+    
+
+}
+/* 800px breakpoint ends */
+/* 500px breakpoint Begins **************/
+
+@media(max-width:500px){
+   
+    
+    
+    
+   
+    
+    /*Header*/
+    
+
+    /*First Section*/
+   
+    .hero{
+        width: 100%;
+    }
+    
+    .hero-image{
+        width: 95%;
+    }
+    
+    .hero-info{
+        padding: 2% 1% 0% 1%;
+        width:100%;
+    }
+    .hero-info h3{
+        font-size: 1.5rem;
+    }
+    
+    .hero-button{
+        font-size: 2rem;
+        width: 18rem;
+    }
+    
+    
+    .project-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin-bottom: 6%;
+    }
+
+    .project-section h3{
+        font-size: 2rem;
+    }
+
+    .project-section .extra{
+        display: none;
+    }
+    
+    
+    /*Footer*/
+    
+  
+
+    footer h2{
+        font-size: 2.8rem;
+    }
+    
+    .contact-footer button{
+        font-size: 2rem;
+        margin: 2%;
+    }
+    
+ 
+
+}
+/* 500px breakpoint ends */
