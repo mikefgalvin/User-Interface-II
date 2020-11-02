@@ -50,7 +50,8 @@ table {
     box-sizing:border-box;
     padding:0;
     margin:0;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
+    max-width: 100%;
 }
 
 html{
@@ -78,7 +79,7 @@ h2{
 
 h3{
     color:#706c61;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 header{
@@ -113,6 +114,7 @@ nav a:hover{
 /*First Section*/
 .hero{
     display:flex;
+    padding-top: 1%;
 }
 
 .hero-image{
@@ -122,7 +124,7 @@ nav a:hover{
 }
 
 .hero-info{
-    padding: 8% 0% 0% 4%;
+    padding: 8% 4% 0% 4%;
     width:55%;
     display:flex;
     flex-direction: column;
@@ -160,24 +162,21 @@ nav a:hover{
 }
 
 
-.projects1{
+.project-section{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
-.projects1 img{
-    width: 20%;
-}
-
-.projects2{
+.project-section div{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
 }
 
-.projects2 img{
-    width: 20%;
-}
 
 .project-title{
     display:flex;
@@ -230,3 +229,126 @@ footer{
 .social a:hover{
     color:black;
 }
+
+
+/* MOBILE STYLES START*************** */
+
+/* anything less than 800px */
+@media(max-width:800px){
+    * { 
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+        border: 1px solid gray;
+        max-width: 100%;
+    }
+    
+    html{
+        font-size:62.5%;
+        padding: 0% 1% 0% 1%;
+    }
+    
+    body{
+        color:#4f4f4f;
+        font-size:2.0rem;
+        font-family: 'Roboto Mono', monospace;
+        line-height:1.5;
+    }
+    
+    h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    h2{
+        color: #706c61;
+        font-size: 3rem;
+    }
+    
+    h3{
+        color:#706c61;
+        font-size: 2rem;
+    }
+    
+    header{
+        background-color: #706c61
+    }
+    
+    /*Header*/
+    
+    .header-nav{
+        font-size: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*First Section*/
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-image{
+        width: 90%;
+        object-fit:cover;
+    }
+    
+    .hero-info{
+        padding: 2% 4% 0% 4%;
+        width:90%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-info h3{
+        font-size: 1.5rem;
+    }
+    
+    .hero-button{
+        font-size: 2rem;
+        width: 18rem;
+    }
+    
+    .project-section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .project-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin-bottom: 6%;
+    }
+
+    .project-section .extra{
+        display: none;
+    }
+    
+    
+    /*Footer*/
+    
+    footer{
+        padding-bottom: 2%;
+    }
+
+    footer h2{
+        font-size: 2.8rem;
+    }
+    
+    .contact-footer button{
+        font-size: 2rem;
+        margin: 2%;
+    }
+    
+    
+    .social{
+        display: none;
+    }
+    
+
+}
+/* 800px breakpoint ends */
